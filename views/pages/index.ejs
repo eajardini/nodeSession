@@ -16,6 +16,20 @@
 
   <br />
   <div>
+    <div>
+      <h1>Menus: <%= menus[0].direitos %></h1>
+      <% if (menus.includes('adm100')> 0) {%>
+      <a href="http://">Nível 1</a>
+      <br>
+      <%}%>
+      <% if (user=="admin121") {%>
+      <a href="http://">Nível 2</a>
+      <br>
+      <%}%>
+      <%if  (menus.includes('adm131')> 0) {%>
+      <a href="http://">Nível 3</a>
+      <%}%>
+    </div>
     <form action="/logout" method="get">
       <div class="" style="text-align: center;">
         <h1>Hi, <%= user %></h1>

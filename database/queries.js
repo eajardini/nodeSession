@@ -16,7 +16,7 @@ const pool = new Pool({
   host: '172.17.0.1',
   database: 'escolaerp',
   password: 'postdba',
-  port: 5433,
+  port: 5432,
 })
 
 module.exports = {
